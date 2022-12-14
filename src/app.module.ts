@@ -10,6 +10,8 @@ import { AppResolver } from './app.resolver';
       driver: ApolloDriver,
       autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
       sortSchema: true,
+      introspection: true,
+      playground: true,
     }),
   ],
   providers: [AppResolver],
